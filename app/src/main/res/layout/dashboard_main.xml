@@ -1,16 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/bgParent">
 
     <TextView
+        android:id="@+id/titleDashboard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Dashboard"
         android:textColor="@color/txtTitles"
-        android:textSize="26"
-        android:textStyle="bold"/>
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+
+        />
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/bell_filled"
+        app:tint="@color/icoColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/titleDashboard"
+        android:layout_marginEnd="25dp"/>
+
+    <View
+        android:id="@+id/lineDivisora"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/titleDashboard"
+        android:layout_marginTop="12dp"
+        />
+
+    <TextView
+        android:id="@+id/txtPresupuesto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MI PRESUPUESTO (2000.00)"
+        app:layout_constraintTop_toBottomOf="@id/lineDivisora"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/txtSubTitle"
+        />
+
+    <!-- Falta, centrar todo bien el presupuesto, mas tarde lo are
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(2000.00)"
+        app:layout_constraintTop_toTopOf="@id/txtPresupuesto"
+        app:layout_constraintStart_toEndOf="@id/txtPresupuesto"/>
+
+     -->
+
+    <ImageView
+        android:id="@+id/imgPresupuesto"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/img_example"
+        app:layout_constraintTop_toBottomOf="@id/txtPresupuesto"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        />
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOTAL\n GASTADO"
+        android:textColor="@color/txtSubTitle"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/imgPresupuesto"
+        app:layout_constraintStart_toEndOf="@id/imgPresupuesto"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="18dp"
+        />
+
+    <TextView
+        android:id="@+id/txtMonto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S/\n 850.00"
+        android:textColor="@color/txtSubTitle"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/txtTotal"
+        app:layout_constraintStart_toStartOf="@id/txtTotal"
+        />
+
+    <TextView
+        android:id="@+id/txtAhorro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AHORRO"
+        android:textColor="@color/txtSubTitle"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/txtMonto"
+        app:layout_constraintStart_toStartOf="@id/txtMonto"/>
+
+    <TextView
+        android:id="@+id/txtPorcentaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0%"
+        android:textColor="@color/txtSubTitle"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/txtAhorro"
+        app:layout_constraintStart_toStartOf="@id/txtMonto"/>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
