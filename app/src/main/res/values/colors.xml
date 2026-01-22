@@ -2,4 +2,17 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="bgNum">#35323e</color>
+    <color name="bgOpeAri">#4c2f7b</color>
+    <color name="bgIgual">#7a46d1</color>
+    <color name="txtCe">#975dfa</color>
+    <color name="bgParentCal">#403b51</color>
+
+    <!-- Colores para el proyecto -->
+
+    <color name="bgParent">#f9fafc</color>
+    <color name="txtTitles">#171a2b</color>
+    <color name="icoColor">#485566</color>
+    <color name="txtSubTitle">#7d8393</color>
+
 </resources>
