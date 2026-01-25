@@ -70,41 +70,52 @@
     </FrameLayout>
 
     <FrameLayout
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_gravity="center|bottom">
+        android:id="@+id/imgPresupuesto"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="bottom"
+        >
 
-        <!-- Progreso circular -->
         <ProgressBar
             android:id="@+id/progressCircle"
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:max="100"
-            android:progress="29"
+            android:progress="45"
             android:indeterminate="false"
-            android:rotation="-90"
-            android:progressDrawable="@drawable/circle_progress" />
+            android:rotation="180"
+            android:progressDrawable="@drawable/circle_progress"/>
 
-        <!-- Texto centrado -->
+
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/txtAmount"
+                android:id="@+id/presupuesCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="S/ 1,150.00"
-                android:textSize="18sp"
+                android:textColor="@color/txtTitles"
                 android:textStyle="bold"
-                android:textColor="#000000" />
+                android:textSize="19sp"
+                android:layout_gravity="center"/>
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="RESTANTE"
-                android:textSize="12sp"
-                android:textColor="#888888" />
+                android:textSize="11sp"
+                android:textColor="@color/txtSubTitle"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
         </LinearLayout>
+
 
     </FrameLayout>
 

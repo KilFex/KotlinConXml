@@ -91,6 +91,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/presupuesCircle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="S/ 1,150.00"
@@ -224,7 +225,6 @@
             >
 
             <TextView
-                android:id="@+id/CeFamiliar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Primax GNV"
@@ -275,7 +275,7 @@
         >
 
         <FrameLayout
-            android:id="@+id/gasolinera"
+            android:id="@+id/superMer"
             android:layout_width="40dp"
             android:layout_height="40dp"
             app:layout_constraintStart_toStartOf="parent"
@@ -291,10 +291,10 @@
         </FrameLayout>
 
         <LinearLayout
-            android:id="@+id/primax"
+            android:id="@+id/superMerFech"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toEndOf="@+id/gasolinera"
+            app:layout_constraintStart_toEndOf="@+id/superMer"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_margin="7dp"
@@ -303,7 +303,6 @@
             >
 
             <TextView
-                android:id="@+id/CeFamiliar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Plaza Vea"
@@ -324,8 +323,8 @@
             android:gravity="center|end"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/primax"
-            app:layout_constraintBottom_toBottomOf="@+id/primax"
+            app:layout_constraintTop_toTopOf="@+id/superMerFech"
+            app:layout_constraintBottom_toBottomOf="@+id/superMerFech"
             android:layout_marginEnd="12dp">
 
             <TextView
@@ -355,7 +354,7 @@
         >
 
         <FrameLayout
-            android:id="@+id/gasolinera"
+            android:id="@+id/susc"
             android:layout_width="40dp"
             android:layout_height="40dp"
             app:layout_constraintStart_toStartOf="parent"
@@ -371,10 +370,10 @@
         </FrameLayout>
 
         <LinearLayout
-            android:id="@+id/primax"
+            android:id="@+id/suscFech"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintStart_toEndOf="@+id/gasolinera"
+            app:layout_constraintStart_toEndOf="@+id/susc"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             android:layout_margin="7dp"
@@ -383,7 +382,6 @@
             >
 
             <TextView
-                android:id="@+id/CeFamiliar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Suscripcion"
@@ -404,8 +402,8 @@
             android:gravity="center|end"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/primax"
-            app:layout_constraintBottom_toBottomOf="@+id/primax"
+            app:layout_constraintTop_toTopOf="@+id/susc"
+            app:layout_constraintBottom_toBottomOf="@+id/susc"
             android:layout_marginEnd="12dp">
 
             <TextView
